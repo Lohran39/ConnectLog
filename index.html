@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect Log - Controle de Estoque</title>
+  <link rel="stylesheet" href="logistics-theme.css">
+</head>
+<body>
+  <header>
+    <h1>📦 LogiTrack - Controle de Estoque</h1>
+  </header>
+
+  <main>
+    <section class="estoque-card">
+      <h2>Produtos em Estoque</h2>
+      <table id="tabelaEstoque">
+        <thead>
+          <tr>
+            <th>Produto</th>
+            <th>Quantidade</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody id="corpoTabela">
+          <!-- Linhas geradas dinamicamente -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <button id="resetEstoque">🔄 Resetar Estoque</button>
+
+  <footer>
+    <p>LogiTrack © 2025</p>
+  </footer>
+
+  <script src="produto.js"></script>
+</body>
+</html>

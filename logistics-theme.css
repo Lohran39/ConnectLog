@@ -1,0 +1,142 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f7fb;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+  background: #2563eb; /* azul */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+/* Conteúdo principal */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 40px 20px;
+}
+
+.estoque-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 700px;
+}
+
+.estoque-card h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #2563eb;
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: center;
+}
+
+th {
+  background: #f0f4ff;
+  color: #2563eb;
+  font-weight: 600;
+  border-bottom: 2px solid #dbeafe;
+}
+
+td {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Botões */
+button {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #f1f5f9;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+#resetEstoque {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #f59e0b, #f97316);
+  color: white;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  z-index: 1000;
+}
+
+#resetEstoque:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 600px) {
+  #resetEstoque {
+    bottom: 15px;
+    right: 15px;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  #resetEstoque {
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 14px;
+    font-size: 0.85rem;
+    border-radius: 8px;
+  }
+}
+
+}
